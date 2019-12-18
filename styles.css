@@ -1,0 +1,27 @@
+  
+* {
+	box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "side nav nav"
+    "side main main"
+}
+
+nav {
+    grid-area: nav;
+    background-color: #303030;
+    height: 10%;
+}
+
+aside {
+    grid-area: side;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main {
+    grid-area: main;
+}
