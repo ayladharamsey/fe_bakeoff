@@ -23,18 +23,17 @@ aside {
     height: 100vh;
     overflow-y: scroll;
 }
+
 h1 {
     font-weight: 400;
 }
 
 h2 {
     font-weight: 300;
-    display: inline;
 }
 
 main {
     grid-area: main;
-    /* margin: auto; */
 }
 
 th{
@@ -83,7 +82,7 @@ section {
 }
 
 .side-nav-header {
-    margin-left:120px
+    margin-left:12%;
 }
 
 button {
@@ -106,6 +105,10 @@ input {
 
 #reset-button {
     margin-left: 20px;
+}
+
+section h2 {
+    display: inline;
 }
 
 
