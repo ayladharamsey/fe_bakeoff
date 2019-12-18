@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>
+        </title>
+    </head>
+    <body>
+        <nav>
+            <h1>Javascript Bakeoff</h1>
+        </nav>
+        <aside>
+            <table class ="side-nav">
+                <h2>Report List</h2>
+                <tbody class="report-list-body"></tbody>
+            </table>
+        </aside>
+        <main>
+            <form>
+                <h2> Request a Report </h2>
+                <input type="text" placeholder="Report Name" id="input-report-name"> 
+                <input type="text" placeholder="Report Frequency" id="input-department-name">      
+                <input type="text" placeholder="Requesting Department" id="input-frequency">
+                <button id="form-button">Submit Request</button>           
+            </form>
+            <section>
+                <table class="selected-report-table">
+                    <tr>
+                        <th>Report Name</th>
+                        <th>Date Added</th>
+                        <th>Department</th>
+                        <th>Purpose</th>
+                        <th>Frequency</th>
+                        <th>Format</th>
+                        <th>Fields</th>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
