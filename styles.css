@@ -82,7 +82,7 @@ section {
 }
 
 .side-nav-header {
-    margin-left:12%;
+    margin-left: 20%;
 }
 
 button {
@@ -109,6 +109,11 @@ input {
 
 section h2 {
     display: inline;
+}
+
+h4 {
+    color: #009B00;
+    font-weight: 300;
 }
 
 
