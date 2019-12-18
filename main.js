@@ -3,11 +3,13 @@ import { mockData } from './mockData.js'
 const reportList = document.querySelector('.report-list-body')
 const sideTable = document.querySelector('.side-nav')
 const formButton = document.querySelector('#form-button')
+const resetButton = document.querySelector('#reset-button')
 
 
 window.addEventListener('load', onLoadFunctions)
 sideTable.addEventListener('click', viewReport)
 formButton.addEventListener('click', gatherReport)
+resetButton.addEventListener('click', resetPage)
 
 
 function onLoadFunctions() {
@@ -35,13 +37,13 @@ function viewReport(e){
 }
 
 function generateDataTable(data){
-    const table = document.querySelector('.selected-report-table')
+    const table = document.querySelector('.selected-table-body')
     table.insertAdjacentHTML('afterend', 
     `
         <tr class="table-content">
             <td class="report-name">${data.name}</td>
-            <td class="department">${data.deparment}</td>
             <td class="date-added">${data.added}</td>
+            <td class="department">${data.department}</td>
             <td class="purpose">${data.purpose}</td>
             <td class="frequency">${data.frequency}</td>
             <td class="format">${data.format}</td>
@@ -75,3 +77,6 @@ function resetInputs(){
     const inputDepartment = document.querySelector('#input-department-name').value = ''
 }
 
+function resetPage() {
+    location.reload();
+}
