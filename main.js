@@ -1,3 +1,5 @@
+//i am importing the mockData by destructuring the data being brought in. 
+// not really as important here, but if you had multiple sets of data within the same file, it would be very useful 
 import { mockData } from './mockData.js'
 
 // all global variables for various dom elements that the user would interact with 
