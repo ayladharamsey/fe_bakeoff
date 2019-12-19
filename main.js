@@ -31,7 +31,7 @@ function createSideNav() {
 //Upon click of a table row within the side nav, this function will go through the mock data and find the rest of the data corresponding with the option chose 
 // for this, we have to utilize event bubbling, to determine the correct data-id for the selected report
 // it then immediately invokes another function 
-function viewReport(e){
+function viewReport(e) {
     const selectedReportId = e.target.closest('.report-selected').getAttribute('data-id')
     const correspondingData = mockData.find(data => {
         return data.id === selectedReportId
@@ -42,7 +42,7 @@ function viewReport(e){
 //This function is immediately invoked in the function above
 //here, we are accessing an HTML element and injecting more HTML with the data that is passed from the previous function
 //To inject dynamic js into the appending HTML, we must use template literals 
-function generateDataTable(data){
+function generateDataTable(data) {
     const table = document.querySelector('.selected-table-body')
     table.insertAdjacentHTML('afterend', 
     `
@@ -73,8 +73,8 @@ function gatherReport(e) {
         reportDepartment : inputDepartment
     }
 
-    saveReport(inputReport, formValues)
-    resetInputs()
+    saveReport(inputReport, formValues);
+    resetInputs();
     renderMessage();
 }
 
@@ -86,7 +86,7 @@ function saveReport(reportName, reportInfo) {
 }
 
 //This function is invoked immediately upon form submission to make the inputs reset back to empty
-function resetInputs(){
+function resetInputs() {
     document.querySelector('#input-report-name').value = ''
     document.querySelector('#input-frequency').value = ''
     document.querySelector('#input-department-name').value = ''
